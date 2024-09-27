@@ -1,0 +1,42 @@
+<section class="contact" id="contact">
+    <div class="left-section-details">
+        <h1 class="heading">Get in <span>touch</span></h1>
+        <div class="address-contact">
+            <div class="address-list">
+                <span><i class='fa fa-phone'></i></span>
+                <p>8667000468</p>
+            </div>
+            <div class="address-list">
+                <span><i class='fa fa-envelope' ></i></span>
+                <p>{{gmail}}</p>
+            </div>
+            <br>
+            <div class="slide-link">
+                <a href="https://www.linkedin.com/in/jahir2003/"><i class="fa-brands fa-linkedin" ></i></a>
+                <a href="https://github.com/Jahirazi"><i class="fa-brands fa-github"></i></a>       </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h1 class="heading">Contact <span>Me!</span></h1>
+        <form class="form" [formGroup]="ContactForm" action="https://api.web3forms.com/submit" method="POST" (ngSubmit) ="onSubmit()">
+            <div class="input-feild">
+                <input type="hidden" name="access_key" value="9f26ffc7-a4ea-4e18-a644-5c71b8a13ebf">
+                <input type="text" formControlName="name" placeholder="Enter your name">
+                <div *ngIf="ContactForm.get('name')?.errors && ContactForm.get('name')?.touched">
+                    <small *ngIf="ContactForm.get('name')?.hasError('required')">Name is Required </small>
+                </div>
+                <input type="text" formControlName="email" placeholder="Enter your email">
+                <div *ngIf="ContactForm.get('email')?.errors && ContactForm.get('email')?.touched">
+                    <small *ngIf="ContactForm.get('email')?.hasError('required')">Email is Required</small>
+                    <small *ngIf="ContactForm.get('email')?.hasError('pattern')">Invalid Mail Id</small>
+                </div>
+            </div>
+            <textarea formControlName="message" cols="30" placeholder="Text Message"></textarea>
+            <div *ngIf="ContactForm.get('message')?.errors && ContactForm.get('message')?.touched">
+                <small *ngIf="ContactForm.get('email')?.hasError('required')">Message cannot be Empty</small>
+            </div>
+            <button class="form-submit" type="submit" >Send Message</button>
+        </form>
+    </div>
+</section>
+

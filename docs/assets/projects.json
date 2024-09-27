@@ -1,0 +1,26 @@
+[
+    {
+      "id":1,
+      "name":"Vidhai",
+      "content": "A Seed Selling E-Commerce Website developed by using Angular Framework.",
+      "view": "https://jahirazi.github.io/vidhai/",
+      "code":"https://github.com/Jahirazi/vidhai",
+      "image":"assets/images/vidhai.png"
+    },
+    {
+      "id":2,
+      "name":"The Reading Room",
+      "content": "A Online Books reading Website developed by using angular Framework.",
+      "code":"https://github.com/Jahirazi/theReadingRoom",
+      "view":"https://jahirazi.github.io/theReadingRoom/",
+      "image":"assets/images/readingroom.png"
+    },
+    {
+      "id":3,
+      "name":"Student Management System",
+      "content": "Student Management System by using Angular's CRUD Operation.",
+      "view": "https://cruddata.netlify.app/",
+      "code":"https://github.com/Jahirazi/student-management-system",
+      "image":"assets/images/sms.jpg" 
+    }
+]

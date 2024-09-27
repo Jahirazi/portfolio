@@ -1,0 +1,179 @@
+.contact {
+    background: var(--second-bg-color);
+    padding: 15rem 5% 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    color: white;
+}
+
+.address-contact{
+    margin-top: 7rem;
+   
+}
+span{
+    color: #00abf0;
+}
+
+.address-contact .address-list{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4rem;
+}
+
+.address-contact .address-list p,
+.address-contact .address-list span{
+    font-size: 2rem;
+}
+
+.address-contact .address-list span{
+    font-size: 2.4rem;
+}
+
+.address-contact .slide-link  {
+    display: flex;
+    margin-left: 80px;
+    gap: 30px;
+}
+
+.address-contact .slide-link a{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #00abf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    background: #00abf0;
+    color: #081b29;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.address-contact .slide-link a:hover{
+    background: transparent;
+    color: #00abf0;
+}
+
+.contact-form {
+    width: 50%;
+    text-align: center;
+}
+
+form{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .input-feild {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+form .input-feild input, textarea {
+    width: 100%;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #00abf0;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.75);
+}
+
+form .input-feild input::placeholder, textarea::placeholder{
+    color: white;
+}
+ form textarea{
+    height: 200px;
+ }
+
+ button{
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    background-color:#00abf0;
+    border-style: none;
+ }
+ button:hover{
+    background-color: white;
+    color: #081b29;
+ }
+
+ 
+ @media (max-width:768px) {
+    .contact{
+        flex-direction: column;
+    }
+    .heading{
+        margin-left: 30px;
+        margin-top: -180px;
+    }
+    .address-contact .address-list{
+        margin-top: -30px;
+        margin-left: -40px;
+    }
+    
+    
+    .address-contact .address-list p{
+        font-size: 20px;
+        margin-left: -65px;
+        margin-top: 15px;
+    }
+    .slide-link a{
+        margin-left: -20px;
+    }
+    .contact-form{
+        margin-top: 60%;
+    }
+    .contact-form .heading{
+        margin-left: -60px;
+    }
+    form{
+        margin-left: -40px;
+    }
+    form .input-feild {
+        flex-direction: column;
+    }
+    button{
+        width: 90%;
+    }
+ }
+    
+//     .contact{
+//         flex-direction: column;
+//         gap: 40px;
+//     }
+
+//     .left-section-details{
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//     }
+
+//     .left-section-details .slide-link{
+//         margin-left: 20px;
+//     }
+
+//     .contact-form{
+//         width: 100%;
+//     }
+// }
+
+// @media (max-width:400px) {
+    
+//     .contact-form .input-feild{
+//         flex-direction: column;
+//     }
+//     }

@@ -1,0 +1,34 @@
+[
+    {
+        "name":"HTML",
+        "image":"assets/images/html.png"
+    },
+    {
+        "name":"CSS",
+        "image":"assets/images/css.png"
+    },
+    {
+        "name":"Bootstrap",
+        "image":"assets/images/bootstrap.png"
+    },
+    {
+        "name":"JavaScript",
+        "image":"assets/images/javascript.png"
+    },
+    {
+        "name":"TypeScript",
+        "image":"assets/images/typescript.png"
+    },
+    {
+        "name":"Angular",
+        "image":"assets/images/angular.png"
+    },
+    {
+        "name":"Java",
+        "image":"assets/images/java.png"
+    },
+    {
+        "name":"MySQL",
+        "image":"assets/images/mysql.png"
+    }
+]

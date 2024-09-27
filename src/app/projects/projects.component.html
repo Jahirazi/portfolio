@@ -1,0 +1,23 @@
+<section class="projects" id="projects">
+    <h1 class="heading">My <span>Projects</span></h1>
+    <div class="projects-content">
+        <div class="projects-box" *ngFor="let project of projects">
+            <img [src]="project.image" alt="">
+            <div class="overlay">
+                <h4>{{project.name}}</h4>
+                <p>{{project.content}}</p>
+                <div class="icons">
+                <button (click)="openLink(project.view)"><i class="fa fa-eye"></i></button>
+                <button (click)="openLink(project.code)"><i class="fa fa-code"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="certificate-content">
+            <h1 class="heading"> <span>Certification</span></h1>
+            <div class="certificate-box">
+                <img src="assets/images/certificate.jpg" alt="" class="certificate">
+            </div>
+        </div>
+        </section>
+    
